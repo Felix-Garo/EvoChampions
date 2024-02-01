@@ -1,70 +1,15 @@
-# Getting Started with Create React App
+# Evo Champion Wins Table
+A reusable React.js sortable table component for displaying and sorting the number of wins for Evo champions, with the added feature of dynamically rendering country flags for each champion. The table includes a custom hook for storing the sorting logic, separate React components for managing table data and country codes, and dynamic links to existing Wikipedia pages for player information, country flags, and games played.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## What is Evo:
+The Evolution Championship Series, commonly known as Evo, is a prominent esports tournament series that showcases competitive video gaming across multiple fighting game genres. Evo is one of the largest and most prestigious events in the esports community. It attracts top players from around the world who compete for victory in popular fighting games. This React table component is designed to elegantly display and sort the wins of Evo champions, offering a user-friendly experience with dynamic country flag rendering and dynamic links to relevant Wikipedia pages for player information, country flags, and the respective video game(s) played where when they won.
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Features:
+- Sortable Columns: Easily sort the table based on different criteria, such as player name, number of tournament wins, and country flag.
+  - When the arrow icon located next to a table header is clicked, the table will do a cycle of sorting the entire table in an order of ascending, to descending, and back to the deafault unorder.
+  - Arrow(s) for a table with sorting criteria also changes with respect to the sort order. The default unorder depicts both arrows, up arrow alone for ascending order, and down arrow alone for descending order.
+  - If a different sort column is picked while in the middle of a sort cycle, the order will begin with ascending order for the new sort column.
+- Custom Styling: Customize the look and feel of the table to match your application's design aesthetic.
+- Dynamic Data Loading: Load dynamic data into the table component, making it easy to update and maintain the list of Evo champions.
+- Country Flags: Dynamically render country flags for each champion using reusable code that parses country names into country codes and generates flag URLs.
+- Dynamic Links: Include dynamic links throughout the table leading to existing Wikipedia pages for player information, country flags, and games played.
