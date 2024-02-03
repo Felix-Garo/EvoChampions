@@ -13,3 +13,6 @@ The Evolution Championship Series, commonly known as Evo, is a prominent esports
 - Dynamic Data Loading: Load dynamic data into the table component, making it easy to update and maintain the list of Evo champions.
 - Country Flags: Dynamically render country flags for each champion using reusable code that parses country names into country codes and generates flag URLs.
 - Dynamic Links: Include dynamic links throughout the table leading to existing Wikipedia pages for player information, country flags, and games played.
+
+## Screenshot
+<img width="1440" alt="EvoChamps" src="https://github.com/Felix-Garo/EvoChampions/assets/148928126/faca70e1-c81b-4c21-b0d1-62cca84a6b3f">
